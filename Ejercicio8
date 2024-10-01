@@ -13,34 +13,6 @@ pipeline{
         }
       }
     }
-    stage('Sumar'){
-      steps{
-        script{
-           suma = numero1 + numero2
-          println 'El resultado de la suma es: ' + suma
-        }
-      }
-    }stage('Restar'){
-      steps{
-        script{
-           resta = numero1 - numero2
-          println 'El resultado de la resta es: ' + resta
-        }
-      }
-    }stage('Multiplicar'){
-      steps{
-        script{
-           multiplicacion = numero1 * numero2
-          println 'El resultado de la multiplicacion es: ' + multiplicacion
-        }
-      }
-    }stage('Dividir'){
-      steps{
-        script{
-           division = numero1 / numero2
-          println 'El resultado de la division es: ' + division
-        }
-      }
-    }
+    
   }
 }

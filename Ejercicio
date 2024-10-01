@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage('Ejercicio 1'){
+            steps{
+                println 'Hola mundo'
+            }
+        }
+    }
+}

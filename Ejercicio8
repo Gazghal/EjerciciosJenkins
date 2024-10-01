@@ -20,6 +20,13 @@ pipeline{
           println 'El resultado de la suma es: ' + suma
         }
       }
+    }stage('Sumar'){
+      steps{
+        script{
+           suma = numero1 + numero2
+          println 'El resultado de la suma es: ' + suma
+        }
+      }
     }
   }
 }

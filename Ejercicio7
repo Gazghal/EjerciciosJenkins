@@ -1,5 +1,5 @@
 def poblacionTotal = 2000
-def fechaActual = new Date().format('dd/MM'yyyy')
+def fechaActual = new Date().format('dd/MM/yyyy')
 pipeline{
   agent any
   stages{

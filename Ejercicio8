@@ -8,8 +8,8 @@ pipeline{
         script{
            fichero = readFile(file: "\\numeros.txt")
             lines = fichero.readLines()
-            numero1 = lines[0]
-            numero2 = lines[1]
+            numero1 = lines[0].tointeger()
+            numero2 = lines[1].toInteger()
         }
       }
     }
@@ -18,6 +18,27 @@ pipeline{
         script{
            suma = numero1 + numero2
           println 'El resultado de la suma es: ' + suma
+        }
+      }
+    }stage('Restar'){
+      steps{
+        script{
+           resta = numero1 - numero2
+          println 'El resultado de la resta es: ' + resta
+        }
+      }
+    }stage('Multiplicar'){
+      steps{
+        script{
+           multiplicacion = numero1 * numero2
+          println 'El resultado de la multiplicacion es: ' + multiplicacion
+        }
+      }
+    }stage('Dividir'){
+      steps{
+        script{
+           division = numero1 / numero2
+          println 'El resultado de la division es: ' + division
         }
       }
     }

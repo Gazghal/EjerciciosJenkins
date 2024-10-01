@@ -1,4 +1,4 @@
-numero1 = 0
+tanumero1 = 0
 numero2 = 0
 pipeline{
   agent any
@@ -20,7 +20,7 @@ pipeline{
           println 'El resultado de la suma es: ' + suma
         }
       }
-    }stage('Sumar'){
+    }stage('Resta'){
       steps{
         script{
            suma = numero1 + numero2

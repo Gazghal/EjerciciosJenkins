@@ -1,5 +1,5 @@
 def poblacionTotal = 2000
-def fechaActual = new Date().format('dd/MM/yyyy')
+def fechaActual = new Date().format('dd-MM-yyyy')
 pipeline{
   agent any
   stages{
@@ -7,8 +7,8 @@ pipeline{
       steps{
         script{
           poblacionNeta = poblacionTotal*0.8
-          println 'La población neta de Bilbao es de: ' + poblacionNeta + ' habitantes.'
-          writeFile(file: "población_neta_${fechaActual}.txt", text: 'La población neta de Bilbao es de: ' + poblacionNeta + ' habitantes.')
+          println 'La poblacion neta de Bilbao es de: ' + poblacionNeta + ' habitantes.'
+          writeFile(file: "población_neta_${fechaActual}.txt", text: 'La poblacion neta de Bilbao es de: ' + poblacionNeta + ' habitantes.')
         }
       }
     }

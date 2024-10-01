@@ -1,10 +1,12 @@
+numeros = ''
 pipeline{
   agent any
   stages{
     stage(''){
       steps{
         script{
-
+           numeros = readFile(file: "\\numeros.txt")
+            println 'La variable es: ' + numeros
         }
       }
     }

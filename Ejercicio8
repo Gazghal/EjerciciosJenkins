@@ -8,7 +8,7 @@ pipeline{
         script{
            fichero = readFile(file: "\\numeros.txt")
             lines = fichero.readLines()
-            numero1 = lines[0].tointeger()
+            numero1 = lines[0].toInteger()
             numero2 = lines[1].toInteger()
         }
       }

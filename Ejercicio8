@@ -5,7 +5,10 @@ pipeline{
     stage(''){
       steps{
         script{
-           numeros = readFile(file: "\\numeros.txt", text: 'numero1:')
+           fichero = readFile(file: "\\numeros.txt")
+            lines = fichero.readLines()
+            numero1 = lines[0]
+            println 'La primera linea es: ' + numero1
             println 'La variable es: ' + numeros
             //println 'Prueba: ' + numeros.toInteger()*numeros.toInteger()
         }

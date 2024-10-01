@@ -5,7 +5,7 @@ pipeline{
     stage(''){
       steps{
         script{
-           numeros = readFile(file: "\\numeros.txt", '${numero1}')
+           numeros = readFile(file: "\\numeros.txt")
             println 'La variable es: ' + numeros
             //println 'Prueba: ' + numeros.toInteger()*numeros.toInteger()
         }

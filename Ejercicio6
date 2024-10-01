@@ -1,0 +1,13 @@
+pipeline{
+  agent any
+  stages{
+    stage('Clima actual'){
+      clima = 'soleado'
+      println 'El clima actual es: ' + clima
+    }
+    stage('Poblacion actual'){
+      poblacion = '500'
+      println 'Actualmente hay ' + poblacion + ' habitantes.'
+    }
+  }
+}
